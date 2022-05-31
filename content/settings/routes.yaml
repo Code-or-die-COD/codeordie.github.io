@@ -4,7 +4,14 @@ collections:
   /:
     permalink: /{slug}/
     template: index
+/docs/:
+    permalink: /docs/{slug}/
+    filter: primary_tag:simply-doc
+/docs/html/:
+    permalink: /docs//html/{slug}/
+    filter: primary_tag:simply-doc-html
 
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
+  
